@@ -34,10 +34,10 @@ public class ScannerServiceImpl {
 
 	private int fileSize = 0;
 	private int random = 1;
-	
+
 	// Keep the correct answer number
 	int answerNr = 0;
-	
+
 	// The answers set
 	int answersSet = 4;
 
@@ -63,6 +63,8 @@ public class ScannerServiceImpl {
 				if (getExtension(file.getName()).equalsIgnoreCase("csv")) {
 					writeToFile(file, outputDir, false);
 				}
+			} else {
+				System.err.println("No files found!");
 			}
 		}
 		// Sla eerst de size van files op in een een variabele om bij te houden
@@ -95,33 +97,33 @@ public class ScannerServiceImpl {
 
 		try {
 			String filePath = file.getPath();
-			// System.err.println("File: " + filePath);
+//			 System.err.println("File: " + filePath);
 
 			// Check if the directory doesnt exist, else create it
 			if (!dir.exists()) {
 				// System.err.println("Directory '" + dir +
 				// "' doesn't exist and will be created.");
 				dir.mkdirs();
-			} else {
+			}
+			else {
 				// System.err.println("Directory '" + dir + "' already exists");
 			}
 
 			// System.err.println("Directory where the file(s) are outputted: "
 			// + dir);
-			FileOutputStream out = new FileOutputStream(dir + File.separator + changeExtension(file));
-			// System.err.println("File to be outputted: " + dir +
-			// File.separator + changeExtension(file) + "\n");
-			
+			FileOutputStream out = new FileOutputStream(dir + File.separator + changeExtension(file).replace(" ", "_"));
+
 			// Read out the questions
 			readQuestions(filePath);
-			
+
 			String xml = buildXML();
 
 			if (xml != null) {
 				out.write(xml.getBytes());
 				out.flush();
 			}
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			System.err.println("Input/Output exeception" + e);
 		}
 	}
@@ -142,7 +144,8 @@ public class ScannerServiceImpl {
 				for (int i = 0; i < s.length; i++) {
 					if (i == 0) {
 						questionsList.add(s[i]);
-					} else if (i > 0 && i < 5) {
+					}
+					else if (i > 0 && i < 5) {
 						if (i == 1) {
 							correctAnswersList.add(s[i]);
 						}
@@ -150,7 +153,8 @@ public class ScannerServiceImpl {
 					}
 				}
 			}
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
@@ -174,13 +178,13 @@ public class ScannerServiceImpl {
 
 			// Keep the number of the question
 			int qNumber = 1;
-			
-			// Keep the number of the correct answer			
+
+			// Keep the number of the correct answer
 			int cAnswer = 0;
-			
+
 			// Create questions
 			for (String q : questionsList) {
-				
+
 				// Fill mixed answers list
 				randomizeAnswerOrder();
 
@@ -197,22 +201,22 @@ public class ScannerServiceImpl {
 				// Create question type element, add an attribute, and add to
 				// question number
 				Element questionType = doc.createElement("questionType");
-				String questionTypeText = "";
+				String qTypeString = "";
 
 				if (!mixedAnswers.contains("(4 afbeeldingen)")) {
 					questionType.setAttribute("typeNr", "1");
 					questionNr.appendChild(questionType);
-					questionTypeText = "Text answers question";					
+					qTypeString = "Text answers type";
 				} else {
 					questionType.setAttribute("typeNr", "2");
 					questionNr.appendChild(questionType);					
-					questionTypeText = "Image answers question";
+					qTypeString = "Image answers type";
 				}
-				
-					// Add a text element to the question type
-					Text qTypeText = doc.createTextNode(questionTypeText);
-					questionType.appendChild(qTypeText);
-				
+
+				// Add a text element to the question type
+				Text qTypeText = doc.createTextNode(qTypeString);
+				questionType.appendChild(qTypeText);
+
 				// Create image element, add an attribute, and add to question
 				// number
 				Element image = doc.createElement("image");
@@ -234,30 +238,45 @@ public class ScannerServiceImpl {
 				// Create answers element, add an attribute, and add to question
 				// number
 				Element answers = doc.createElement("answers");
-				questionNr.appendChild(answers);			
+				questionNr.appendChild(answers);
 				
-				for(int a = 0; a < mixedAnswers.size(); a++) {
-					// Create answer element, add an attribute, and add to question
-					// number
-					Element answer = doc.createElement("answer");
-					answers.appendChild(answer);
+				String correctAnswerText = "";
+				String answerText = "";
+
+				for (int a = 0; a < mixedAnswers.size(); a++) {
 					
-						// Add a text element to the question type
-						Text aText = doc.createTextNode(mixedAnswers.get(a));
-						answer.appendChild(aText);
+					int nr = a + 1;
+					answerText = nr + "";
+					
+					if(correctAnswersList.get(cAnswer).equals(mixedAnswers.get(a))) {
+						correctAnswerText = answerText;						
+					}					
+
+					// Create answer element, add an attribute, and add to
+					// question number					
+					Element answer = doc.createElement("answer");
+					answer.setAttribute("number", answerText);
+					answers.appendChild(answer);
+
+					// Add a text element to the question type
+					Text aText = doc.createTextNode(mixedAnswers.get(a));
+					answer.appendChild(aText);									
 				}
-				mixedAnswers.clear();
+				cAnswer++;
+				
 				
 				// Create answer element, add an attribute, and add to question
 				// number
 				Element correctAnswer = doc.createElement("correctAnswer");
 				questionNr.appendChild(correctAnswer);
-
-				// Add a text element to the question type
-				Text cAText = doc.createTextNode(correctAnswersList.get(cAnswer++));
+				
+				// Add a text element to the correct answer
+				Text cAText = doc.createTextNode(correctAnswerText);
 				correctAnswer.appendChild(cAText);
+				
+				mixedAnswers.clear();
 			}
-			
+
 			// ///////////////
 			// Output the XML
 
@@ -276,36 +295,41 @@ public class ScannerServiceImpl {
 			StreamResult result = new StreamResult(sw);
 
 			trans.transform(source, result);
-
+			
 			return sw.toString();
 
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
 
 	private void randomizeAnswerOrder() {
-		for (;answerNr < answersSet; answerNr++) {
+		for (; answerNr < answersSet; answerNr++) {
 			int place = (int) (Math.random() * random);
-			
+
 			if (mixedAnswers.size() == 0) {
 				mixedAnswers.add(place, answersList.get(answerNr));
 				random++;
-			} else if (mixedAnswers.size() == 1) {
+			}
+			else if (mixedAnswers.size() == 1) {
 				mixedAnswers.add(place, answersList.get(answerNr));
 				random++;
-			} else if (mixedAnswers.size() == 2) {
+			}
+			else if (mixedAnswers.size() == 2) {
 				mixedAnswers.add(place, answersList.get(answerNr));
 				random++;
-			} else if (mixedAnswers.size() == 3) {
+			}
+			else if (mixedAnswers.size() == 3) {
 				mixedAnswers.add(place, answersList.get(answerNr));
 				random = 1;
-				place = 0;				
+				place = 0;
 			}
 		}
-		answersSet += 4;		
+		answersSet += 4;
 	}
+
 	/**
 	 * @param filename
 	 *            is de bestandsnaam waarvan de extensie wordt veranderd
@@ -315,7 +339,8 @@ public class ScannerServiceImpl {
 		String fileName = "";
 		if (file.getName().length() > 0) {
 			fileName = file.getName().substring(0, (file.getName().lastIndexOf(".") + 1)) + "xml";
-		} else {
+		}
+		else {
 			System.err.println("Geen correcte file opgegeven!");
 		}
 		return fileName;
@@ -335,7 +360,8 @@ public class ScannerServiceImpl {
 					files.add(f);
 				}
 			}
-		} else {
+		}
+		else {
 			System.err.println("Error");
 		}
 	}
