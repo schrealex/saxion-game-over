@@ -4,14 +4,14 @@
 <question number="1">
 <questionType typeNr="1">Text answers type</questionType>
 <image>image url</image>
-<question>Welk land is bekend om zijn piramides? </question>
+<question>Welk land is bekend om zijn piramides?</question>
 <answers>
-<answer number="1">Jordanië</answer>
-<answer number="2">Egypte</answer>
-<answer number="3">Israël</answer>
-<answer number="4">Libië</answer>
+<answer number="1">Egypte</answer>
+<answer number="2">Jordanië</answer>
+<answer number="3">Libië</answer>
+<answer number="4">Israël</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Egypte</correctAnswer>
 </question>
 <!-- Question number: 2 -->
 <question number="2">
@@ -19,12 +19,12 @@
 <image>image url</image>
 <question>Waar komen de Maya's vandaan?</question>
 <answers>
-<answer number="1">Zuid-Amerika</answer>
+<answer number="1">Noord-Amerika</answer>
 <answer number="2">Afrika</answer>
-<answer number="3">Noord-Amerika</answer>
-<answer number="4">Azië</answer>
+<answer number="3">Azië</answer>
+<answer number="4">Zuid-Amerika</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Zuid-Amerika</correctAnswer>
 </question>
 <!-- Question number: 3 -->
 <question number="3">
@@ -32,25 +32,25 @@
 <image>image url</image>
 <question>Waar komen de Vikingen vandaan?</question>
 <answers>
-<answer number="1">IJsland</answer>
-<answer number="2">Alaska</answer>
-<answer number="3">Groenland</answer>
-<answer number="4">Scandinavië</answer>
+<answer number="1">Alaska</answer>
+<answer number="2">IJsland</answer>
+<answer number="3">Scandinavië</answer>
+<answer number="4">Groenland</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Scandinavië</correctAnswer>
 </question>
 <!-- Question number: 4 -->
 <question number="4">
 <questionType typeNr="1">Text answers type</questionType>
 <image>image url</image>
-<question>Waar varen de Vikingen mee?</question>
+<question>Waar varen de Vinkingen mee?</question>
 <answers>
 <answer number="1">Drakar</answer>
-<answer number="2">Kano</answer>
-<answer number="3">Fluisterboot</answer>
-<answer number="4">Surfplank</answer>
+<answer number="2">Fluisterboot</answer>
+<answer number="3">Surfplank</answer>
+<answer number="4">Kano</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Drakar</correctAnswer>
 </question>
 <!-- Question number: 5 -->
 <question number="5">
@@ -58,12 +58,12 @@
 <image>image url</image>
 <question>Hoe heet het gevecht tussen ridders?</question>
 <answers>
-<answer number="1">Duel</answer>
-<answer number="2">Strooispel</answer>
-<answer number="3">Steekspel</answer>
+<answer number="1">Strooispel</answer>
+<answer number="2">Steekspel</answer>
+<answer number="3">Duel</answer>
 <answer number="4">Ronde</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Steekspel</correctAnswer>
 </question>
 <!-- Question number: 6 -->
 <question number="6">
@@ -71,12 +71,12 @@
 <image>image url</image>
 <question>Waar werd in de Middeleeuwen het vuilnis gelaten?</question>
 <answers>
-<answer number="1">Het werd verbrand</answer>
-<answer number="2">De container</answer>
+<answer number="1">De container</answer>
+<answer number="2">Op straat</answer>
 <answer number="3">In de zee</answer>
-<answer number="4">Op straat</answer>
+<answer number="4">Het werd verbrand</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Op straat</correctAnswer>
 </question>
 <!-- Question number: 7 -->
 <question number="7">
@@ -84,12 +84,12 @@
 <image>image url</image>
 <question>Wie was de baas van het Rijk der Nederlanden?</question>
 <answers>
-<answer number="1">Willem van Oranje</answer>
-<answer number="2">Napoleon</answer>
-<answer number="3">Mozart</answer>
-<answer number="4">Bush</answer>
+<answer number="1">Napoleon</answer>
+<answer number="2">Bush</answer>
+<answer number="3">Willem van Oranje</answer>
+<answer number="4">Mozart</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Willem van Oranje</correctAnswer>
 </question>
 <!-- Question number: 8 -->
 <question number="8">
@@ -97,12 +97,12 @@
 <image>image url</image>
 <question>Uit welke landen bestond het Rijk der Nederlanden?</question>
 <answers>
-<answer number="1">Luxemburg, Nederland, Groot-Brittannië</answer>
-<answer number="2">Groot-Brittannië, Nederland, Frankrijk</answer>
-<answer number="3">Duitsland, Nederland, België</answer>
+<answer number="1">Groot-Brittannië, Nederland, Frankrijk</answer>
+<answer number="2">Duitsland, Nederland, België</answer>
+<answer number="3">Luxemburg, Nederland, Groot-Brittannië</answer>
 <answer number="4">Nederland, België, Luxemburg</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Nederland, België, Luxemburg</correctAnswer>
 </question>
 <!-- Question number: 9 -->
 <question number="9">
@@ -110,12 +110,12 @@
 <image>image url</image>
 <question>Waar kwamen de slaven voornamelijk vandaan?</question>
 <answers>
-<answer number="1">Amerika</answer>
-<answer number="2">Australië</answer>
-<answer number="3">Afrika</answer>
+<answer number="1">Afrika</answer>
+<answer number="2">Amerika</answer>
+<answer number="3">Australië</answer>
 <answer number="4">Europa</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Afrika</correctAnswer>
 </question>
 <!-- Question number: 10 -->
 <question number="10">
@@ -128,7 +128,7 @@
 <answer number="3">(4 afbeeldingen)</answer>
 <answer number="4">(4 afbeeldingen)</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>(4 afbeeldingen)</correctAnswer>
 </question>
 <!-- Question number: 11 -->
 <question number="11">
@@ -136,12 +136,12 @@
 <image>image url</image>
 <question>Op welk instrument speelde Mozart?</question>
 <answers>
-<answer number="1">Tuba</answer>
-<answer number="2">Triangel</answer>
+<answer number="1">Triangel</answer>
+<answer number="2">Saxofoon</answer>
 <answer number="3">Klavier</answer>
-<answer number="4">Saxofoon</answer>
+<answer number="4">Tuba</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Klavier</correctAnswer>
 </question>
 <!-- Question number: 12 -->
 <question number="12">
@@ -149,12 +149,12 @@
 <image>image url</image>
 <question>Tussen wie speelde de Amerikaanse burgeroorlog zich af?</question>
 <answers>
-<answer number="1">De blanken en zwarten</answer>
-<answer number="2">Hawai en Alaska</answer>
-<answer number="3">Het noorden en zuiden</answer>
-<answer number="4">Het oosten en westen</answer>
+<answer number="1">Het oosten en westen</answer>
+<answer number="2">Het noorden en zuiden</answer>
+<answer number="3">De blanken en zwarten</answer>
+<answer number="4">Hawai en Alaska</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Het noorden en zuiden</correctAnswer>
 </question>
 <!-- Question number: 13 -->
 <question number="13">
@@ -162,12 +162,12 @@
 <image>image url</image>
 <question>Waarin wonen Indianen?</question>
 <answers>
-<answer number="1">Boomhut</answer>
-<answer number="2">Flat</answer>
+<answer number="1">Flat</answer>
+<answer number="2">Boomhut</answer>
 <answer number="3">Huis</answer>
 <answer number="4">Tipi</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Tipi</correctAnswer>
 </question>
 <!-- Question number: 14 -->
 <question number="14">
@@ -175,12 +175,12 @@
 <image>image url</image>
 <question>Waar kwam de eerste man op de maan vandaan?</question>
 <answers>
-<answer number="1">Verenigde Staten</answer>
-<answer number="2">Rusland</answer>
-<answer number="3">Frankrijk</answer>
-<answer number="4">India</answer>
+<answer number="1">Rusland</answer>
+<answer number="2">Verenigde Staten</answer>
+<answer number="3">India</answer>
+<answer number="4">Frankrijk</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Verenigde Staten</correctAnswer>
 </question>
 <!-- Question number: 15 -->
 <question number="15">
@@ -188,12 +188,12 @@
 <image>image url</image>
 <question>Wanneer was de 2e wereldoorlog afgelopen?</question>
 <answers>
-<answer number="1">6 mei 2009</answer>
-<answer number="2">3 mei 1915</answer>
+<answer number="1">3 mei 1915</answer>
+<answer number="2">6 mei 2009</answer>
 <answer number="3">5 mei 1945</answer>
 <answer number="4">6 mei 1977</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>5 mei 1945</correctAnswer>
 </question>
 <!-- Question number: 16 -->
 <question number="16">
@@ -201,12 +201,12 @@
 <image>image url</image>
 <question>Welke muur in Jeruzalem, zit vol met allemaal briefjes?</question>
 <answers>
-<answer number="1">Papierenmuur</answer>
-<answer number="2">Doekmuur</answer>
-<answer number="3">De Klaagmuur</answer>
-<answer number="4">Berlijnse muur</answer>
+<answer number="1">Berlijnse muur</answer>
+<answer number="2">Papierenmuur</answer>
+<answer number="3">Doekmuur</answer>
+<answer number="4">De Klaagmuur</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>De Klaagmuur</correctAnswer>
 </question>
 <!-- Question number: 17 -->
 <question number="17">
@@ -214,12 +214,12 @@
 <image>image url</image>
 <question>Op welk werelddeel  lijden de meeste mensen honger?</question>
 <answers>
-<answer number="1">Antartica</answer>
-<answer number="2">Afrika</answer>
-<answer number="3">Azië</answer>
-<answer number="4">Europa</answer>
+<answer number="1">Europa</answer>
+<answer number="2">Antartica</answer>
+<answer number="3">Afrika</answer>
+<answer number="4">Azië</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Afrika</correctAnswer>
 </question>
 <!-- Question number: 18 -->
 <question number="18">
@@ -227,12 +227,12 @@
 <image>image url</image>
 <question>Door wat waren oost en west Berlijn gescheiden?</question>
 <answers>
-<answer number="1">Rivier</answer>
-<answer number="2">Muur</answer>
-<answer number="3">Net</answer>
-<answer number="4">Zee</answer>
+<answer number="1">Muur</answer>
+<answer number="2">Net</answer>
+<answer number="3">Zee</answer>
+<answer number="4">Rivier</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Muur</correctAnswer>
 </question>
 <!-- Question number: 19 -->
 <question number="19">
@@ -240,12 +240,12 @@
 <image>image url</image>
 <question>Waar waren de Olypmische Spelen van 2008?</question>
 <answers>
-<answer number="1">Parijs</answer>
+<answer number="1">China</answer>
 <answer number="2">Amsterdam</answer>
-<answer number="3">China</answer>
-<answer number="4">Barcelona</answer>
+<answer number="3">Barcelona</answer>
+<answer number="4">Parijs</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>China</correctAnswer>
 </question>
 <!-- Question number: 20 -->
 <question number="20">
@@ -253,12 +253,12 @@
 <image>image url</image>
 <question>Wie is de koningin van Nederland?</question>
 <answers>
-<answer number="1">Maxima</answer>
-<answer number="2">Magriet</answer>
-<answer number="3">Alexia</answer>
-<answer number="4">Beatrix</answer>
+<answer number="1">Alexia</answer>
+<answer number="2">Maxima</answer>
+<answer number="3">Beatrix</answer>
+<answer number="4">Magriet</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Beatrix</correctAnswer>
 </question>
 <!-- Question number: 21 -->
 <question number="21">
@@ -266,12 +266,12 @@
 <image>image url</image>
 <question>Wat is de langstlopende Nederlandse soap serie?</question>
 <answers>
-<answer number="1">Goede Tijden Slechte Tijden</answer>
-<answer number="2">Hertenkamp</answer>
-<answer number="3">Goudkust</answer>
-<answer number="4">Onderweg naar morgen</answer>
+<answer number="1">Goudkust</answer>
+<answer number="2">Goede Tijden Slechte Tijden</answer>
+<answer number="3">Onderweg naar morgen</answer>
+<answer number="4">Hertenkamp</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Goede Tijden Slechte Tijden</correctAnswer>
 </question>
 <!-- Question number: 22 -->
 <question number="22">
@@ -279,12 +279,12 @@
 <image>image url</image>
 <question>Waar komt prinses Maxima vandaan?</question>
 <answers>
-<answer number="1">Argentinië</answer>
+<answer number="1">China</answer>
 <answer number="2">Zuid-Afrika</answer>
-<answer number="3">Rusland</answer>
-<answer number="4">China</answer>
+<answer number="3">Argentinië</answer>
+<answer number="4">Rusland</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Argentinië</correctAnswer>
 </question>
 <!-- Question number: 23 -->
 <question number="23">
@@ -292,12 +292,12 @@
 <image>image url</image>
 <question>Uit hoeveel seizoenen bestaat een jaar?</question>
 <answers>
-<answer number="1">2</answer>
-<answer number="2">4</answer>
-<answer number="3">12</answer>
-<answer number="4">6</answer>
+<answer number="1">6</answer>
+<answer number="2">12</answer>
+<answer number="3">4</answer>
+<answer number="4">2</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>4</correctAnswer>
 </question>
 <!-- Question number: 24 -->
 <question number="24">
@@ -305,12 +305,12 @@
 <image>image url</image>
 <question>Wat is de hoogste berg ter wereld?</question>
 <answers>
-<answer number="1">Kilimanjaro</answer>
-<answer number="2">Mont Blanc</answer>
+<answer number="1">Mount Everest</answer>
+<answer number="2">Kilimanjaro</answer>
 <answer number="3">Kompasberg</answer>
-<answer number="4">Mount Everest</answer>
+<answer number="4">Mont Blanc</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Mount Everest</correctAnswer>
 </question>
 <!-- Question number: 25 -->
 <question number="25">
@@ -319,11 +319,11 @@
 <question>Wat is de meest gesproken taal ter wereld?</question>
 <answers>
 <answer number="1">Engels</answer>
-<answer number="2">Russisch</answer>
+<answer number="2">Spaans</answer>
 <answer number="3">Chinees</answer>
-<answer number="4">Spaans</answer>
+<answer number="4">Russisch</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Chinees</correctAnswer>
 </question>
 <!-- Question number: 26 -->
 <question number="26">
@@ -336,7 +336,7 @@
 <answer number="3">(4 afbeeldingen)</answer>
 <answer number="4">(4 afbeeldingen)</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>(4 afbeeldingen)</correctAnswer>
 </question>
 <!-- Question number: 27 -->
 <question number="27">
@@ -344,12 +344,12 @@
 <image>image url</image>
 <question>Welke landen vallen onder Scandinavie?</question>
 <answers>
-<answer number="1">IJsland, Letland, Noorwegen</answer>
-<answer number="2">Denemarken, Finland, Noorwegen en Zweden</answer>
+<answer number="1">Denemarken, Finland, Noorwegen en Zweden</answer>
+<answer number="2">Denemarken, Groenland, Noorwegen</answer>
 <answer number="3">Finland, Noorwegen, Zweden</answer>
-<answer number="4">Denemarken, Groenland, Noorwegen</answer>
+<answer number="4">IJsland, Letland, Noorwegen</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Denemarken, Finland, Noorwegen en Zweden</correctAnswer>
 </question>
 <!-- Question number: 28 -->
 <question number="28">
@@ -358,11 +358,11 @@
 <question>Door welke tunnel wordt Frankrijk met Engeland verbonden?</question>
 <answers>
 <answer number="1">Coentunnel</answer>
-<answer number="2">Mont Blanctunnel</answer>
-<answer number="3">Gotthardtunnel</answer>
-<answer number="4">Kanaaltunnel</answer>
+<answer number="2">Gotthardtunnel</answer>
+<answer number="3">Kanaaltunnel</answer>
+<answer number="4">Mont Blanctunnel</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Kanaaltunnel</correctAnswer>
 </question>
 <!-- Question number: 29 -->
 <question number="29">
@@ -370,12 +370,12 @@
 <image>image url</image>
 <question>Welk vervoersmiddel rijdt er door de de Kanaaltunnel?</question>
 <answers>
-<answer number="1">Trein</answer>
-<answer number="2">Bus</answer>
+<answer number="1">Bus</answer>
+<answer number="2">Trein</answer>
 <answer number="3">Tram</answer>
 <answer number="4">Vrachtwagen</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Trein</correctAnswer>
 </question>
 <!-- Question number: 30 -->
 <question number="30">
@@ -384,11 +384,11 @@
 <question>Wat eten Fransen tijdens het ontbijt?</question>
 <answers>
 <answer number="1">Croissant</answer>
-<answer number="2">Witte bonen</answer>
-<answer number="3">Pap</answer>
-<answer number="4">Braadworst</answer>
+<answer number="2">Pap</answer>
+<answer number="3">Braadworst</answer>
+<answer number="4">Witte bonen</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Croissant</correctAnswer>
 </question>
 <!-- Question number: 31 -->
 <question number="31">
@@ -396,12 +396,12 @@
 <image>image url</image>
 <question>Welk land wordt omringd door Frankrijk en grenst aan de Middelandse Zee? </question>
 <answers>
-<answer number="1">Spanje</answer>
+<answer number="1">België</answer>
 <answer number="2">Portugal</answer>
-<answer number="3">België</answer>
-<answer number="4">Monaco</answer>
+<answer number="3">Monaco</answer>
+<answer number="4">Spanje</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Monaco</correctAnswer>
 </question>
 <!-- Question number: 32 -->
 <question number="32">
@@ -409,12 +409,12 @@
 <image>image url</image>
 <question>Uit hoeveeel provincies bestaat Nederland?</question>
 <answers>
-<answer number="1">8</answer>
-<answer number="2">12</answer>
-<answer number="3">4</answer>
-<answer number="4">11</answer>
+<answer number="1">11</answer>
+<answer number="2">8</answer>
+<answer number="3">12</answer>
+<answer number="4">4</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>12</correctAnswer>
 </question>
 <!-- Question number: 33 -->
 <question number="33">
@@ -422,12 +422,12 @@
 <image>image url</image>
 <question>Welke drank wordt het meest gemaakt in Frankrijk?</question>
 <answers>
-<answer number="1">Port</answer>
-<answer number="2">Cola</answer>
-<answer number="3">Wijn</answer>
-<answer number="4">Jenever</answer>
+<answer number="1">Cola</answer>
+<answer number="2">Port</answer>
+<answer number="3">Jenever</answer>
+<answer number="4">Wijn</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Wijn</correctAnswer>
 </question>
 <!-- Question number: 34 -->
 <question number="34">
@@ -436,11 +436,11 @@
 <question>Wat kan je bekijken in het Louvre?</question>
 <answers>
 <answer number="1">Kunst</answer>
-<answer number="2">Bekende mensen</answer>
-<answer number="3">Boten</answer>
-<answer number="4">Eten</answer>
+<answer number="2">Boten</answer>
+<answer number="3">Eten</answer>
+<answer number="4">Bekende mensen</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Kunst</correctAnswer>
 </question>
 <!-- Question number: 35 -->
 <question number="35">
@@ -448,10 +448,10 @@
 <image>image url</image>
 <question>In hoeveel delen was Duitsland vroeger verdeeld? </question>
 <answers>
-<answer number="1">1</answer>
+<answer number="1">4</answer>
 <answer number="2">2</answer>
-<answer number="3">4</answer>
-<answer number="4">3</answer>
+<answer number="3">3</answer>
+<answer number="4">1</answer>
 </answers>
 <correctAnswer>2</correctAnswer>
 </question>
@@ -461,12 +461,12 @@
 <image>image url</image>
 <question>Welke hond komt van oorsprong uit Duitsland?</question>
 <answers>
-<answer number="1">Poedel</answer>
-<answer number="2">Labrador</answer>
+<answer number="1">Duitse herder</answer>
+<answer number="2">Poedel</answer>
 <answer number="3">Jack Russel</answer>
-<answer number="4">Duitse herder</answer>
+<answer number="4">Labrador</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Duitse herder</correctAnswer>
 </question>
 <!-- Question number: 37 -->
 <question number="37">
@@ -474,12 +474,12 @@
 <image>image url</image>
 <question>Welke gebergte ligt tussen Frankrijk en Spanje?</question>
 <answers>
-<answer number="1">Pyreneeën</answer>
-<answer number="2">Rocky Mountains</answer>
-<answer number="3">Alpen</answer>
-<answer number="4">Himalaya</answer>
+<answer number="1">Rocky Mountains</answer>
+<answer number="2">Alpen</answer>
+<answer number="3">Himalaya</answer>
+<answer number="4">Pyreneeën</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Pyreneeën</correctAnswer>
 </question>
 <!-- Question number: 38 -->
 <question number="38">
@@ -488,11 +488,11 @@
 <question>Welke dwergstaat ligt in Rome? </question>
 <answers>
 <answer number="1">Monaco</answer>
-<answer number="2">Liechtenstein</answer>
+<answer number="2">Vaticaanstad</answer>
 <answer number="3">Andorra</answer>
-<answer number="4">Vaticaanstad</answer>
+<answer number="4">Liechtenstein</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Vaticaanstad</correctAnswer>
 </question>
 <!-- Question number: 39 -->
 <question number="39">
@@ -500,12 +500,12 @@
 <image>image url</image>
 <question>Wie is de leider van de Rooms katholieke kerk?</question>
 <answers>
-<answer number="1">De Paus</answer>
-<answer number="2">Priester</answer>
-<answer number="3">Dominee</answer>
-<answer number="4">Monnik</answer>
+<answer number="1">Priester</answer>
+<answer number="2">Monnik</answer>
+<answer number="3">De Paus</answer>
+<answer number="4">Dominee</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>De Paus</correctAnswer>
 </question>
 <!-- Question number: 40 -->
 <question number="40">
@@ -513,12 +513,12 @@
 <image>image url</image>
 <question>Wat is het meest gebruikt vervoer in Venetie?</question>
 <answers>
-<answer number="1">Tram</answer>
+<answer number="1">Taxi</answer>
 <answer number="2">Bus</answer>
 <answer number="3">Boot</answer>
-<answer number="4">Taxi</answer>
+<answer number="4">Tram</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Boot</correctAnswer>
 </question>
 <!-- Question number: 41 -->
 <question number="41">
@@ -526,12 +526,12 @@
 <image>image url</image>
 <question>Welke talen worden gesproken in Zwitserland?</question>
 <answers>
-<answer number="1">Zwitsers, Duits</answer>
-<answer number="2">Frans, Italiaans</answer>
-<answer number="3">Duits, Frans, Italiaans</answer>
-<answer number="4">Frans, Duits, Spaans</answer>
+<answer number="1">Duits, Frans, Italiaans</answer>
+<answer number="2">Frans, Duits, Spaans</answer>
+<answer number="3">Zwitsers, Duits</answer>
+<answer number="4">Frans, Italiaans</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Duits, Frans, Italiaans</correctAnswer>
 </question>
 <!-- Question number: 42 -->
 <question number="42">
@@ -539,12 +539,12 @@
 <image>image url</image>
 <question>Welke criminele organisatie komt voor in Italië?</question>
 <answers>
-<answer number="1">Yakuza</answer>
-<answer number="2">IRA</answer>
+<answer number="1">IRA</answer>
+<answer number="2">Yakuza</answer>
 <answer number="3">Maffia</answer>
 <answer number="4">Taliban</answer>
 </answers>
-<correctAnswer>3</correctAnswer>
+<correctAnswer>Maffia</correctAnswer>
 </question>
 <!-- Question number: 43 -->
 <question number="43">
@@ -557,7 +557,7 @@
 <answer number="3">(4 afbeeldingen)</answer>
 <answer number="4">(4 afbeeldingen)</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>(4 afbeeldingen)</correctAnswer>
 </question>
 <!-- Question number: 44 -->
 <question number="44">
@@ -565,12 +565,12 @@
 <image>image url</image>
 <question>Waar wonen de Roma's in?</question>
 <answers>
-<answer number="1">Tipi's</answer>
-<answer number="2">Huizen</answer>
-<answer number="3">Tenten</answer>
+<answer number="1">Huizen</answer>
+<answer number="2">Tenten</answer>
+<answer number="3">Tipi's</answer>
 <answer number="4">Woonwagens</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Woonwagens</correctAnswer>
 </question>
 <!-- Question number: 45 -->
 <question number="45">
@@ -578,12 +578,12 @@
 <image>image url</image>
 <question>Welk Europees land bestaat uit de meeste eilanden?</question>
 <answers>
-<answer number="1">Noorwegen</answer>
-<answer number="2">Griekenland</answer>
-<answer number="3">Italië</answer>
+<answer number="1">Griekenland</answer>
+<answer number="2">Italië</answer>
+<answer number="3">Noorwegen</answer>
 <answer number="4">Spanje</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Griekenland</correctAnswer>
 </question>
 <!-- Question number: 46 -->
 <question number="46">
@@ -593,10 +593,10 @@
 <answers>
 <answer number="1">Ob</answer>
 <answer number="2">Nijl</answer>
-<answer number="3">Amazone</answer>
-<answer number="4">Mississippi</answer>
+<answer number="3">Mississippi</answer>
+<answer number="4">Amazone</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Nijl</correctAnswer>
 </question>
 <!-- Question number: 47 -->
 <question number="47">
@@ -609,7 +609,7 @@
 <answer number="3">(4 afbeeldingen)</answer>
 <answer number="4">(4 afbeeldingen)</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>(4 afbeeldingen)</correctAnswer>
 </question>
 <!-- Question number: 48 -->
 <question number="48">
@@ -617,12 +617,12 @@
 <image>image url</image>
 <question>In welke Canadese provincie is Frans de officieel gesproken taal?</question>
 <answers>
-<answer number="1">Ontario</answer>
+<answer number="1">Alberta</answer>
 <answer number="2">Quebec</answer>
 <answer number="3">Nova Scotia</answer>
-<answer number="4">Alberta</answer>
+<answer number="4">Ontario</answer>
 </answers>
-<correctAnswer>2</correctAnswer>
+<correctAnswer>Quebec</correctAnswer>
 </question>
 <!-- Question number: 49 -->
 <question number="49">
@@ -631,11 +631,11 @@
 <question>Welk vervoer wordt er vaak gebruikt in het poolgebied?</question>
 <answers>
 <answer number="1">Hondenslee</answer>
-<answer number="2">Waterscooter</answer>
-<answer number="3">Helikopter</answer>
-<answer number="4">Fiets</answer>
+<answer number="2">Helikopter</answer>
+<answer number="3">Fiets</answer>
+<answer number="4">Waterscooter</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Hondenslee</correctAnswer>
 </question>
 <!-- Question number: 50 -->
 <question number="50">
@@ -648,7 +648,7 @@
 <answer number="3">(4 afbeeldingen)</answer>
 <answer number="4">(4 afbeeldingen)</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>(4 afbeeldingen)</correctAnswer>
 </question>
 <!-- Question number: 51 -->
 <question number="51">
@@ -658,10 +658,10 @@
 <answers>
 <answer number="1">BMW</answer>
 <answer number="2">Yamaha</answer>
-<answer number="3">Honda</answer>
-<answer number="4">Harley Davidson</answer>
+<answer number="3">Harley Davidson</answer>
+<answer number="4">Honda</answer>
 </answers>
-<correctAnswer>4</correctAnswer>
+<correctAnswer>Harley Davidson</correctAnswer>
 </question>
 <!-- Question number: 52 -->
 <question number="52">
@@ -669,11 +669,11 @@
 <image>image url</image>
 <question>Welke gebeurtenis speelde zich af op 11 september 2001?</question>
 <answers>
-<answer number="1">Aanslag op het World Trade Center in New York</answer>
-<answer number="2">Verjaardag van Bush</answer>
-<answer number="3">Start oorlog in Irak</answer>
-<answer number="4">Dood Bin Laden</answer>
+<answer number="1">Verjaardag van Bush</answer>
+<answer number="2">Start oorlog in Irak</answer>
+<answer number="3">Dood Bin Laden</answer>
+<answer number="4">Aanslag op het World Trade Center in New York</answer>
 </answers>
-<correctAnswer>1</correctAnswer>
+<correctAnswer>Aanslag op het World Trade Center in New York</correctAnswer>
 </question>
 </questions>
