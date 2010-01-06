@@ -244,8 +244,8 @@ public class ScannerServiceImpl {
 
 				for (int a = 0; a < mixedAnswers.size(); a++) {
 					
-//					int nr = a + 1;
-//					answerText = nr + "";
+					int nr = a + 1;
+					answerText = nr + "";
 					
 					if(correctAnswersList.get(cAnswer).equals(mixedAnswers.get(a))) {
 						correctAnswerText = correctAnswersList.get(cAnswer);						
