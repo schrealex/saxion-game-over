@@ -55,7 +55,7 @@ public class ScannerServiceImpl {
 		// File(s) ophalen uit de opgegeven directory
 		getFiles(new File(fileDir), settings);
 
-		for (File file : files) {
+		for (File file : files) {			
 			File csv = new File(file.getParent() + File.separator + new Scanner(file.getName()).findWithinHorizon(".*(?=\\.)", 0) + ".csv");
 
 			// Controleer of een file
@@ -97,7 +97,7 @@ public class ScannerServiceImpl {
 
 		try {
 			String filePath = file.getPath();
-//			 System.err.println("File: " + filePath);
+//			System.err.println("File: " + filePath);
 
 			// Check if the directory doesnt exist, else create it
 			if (!dir.exists()) {
@@ -109,8 +109,7 @@ public class ScannerServiceImpl {
 				// System.err.println("Directory '" + dir + "' already exists");
 			}
 
-			// System.err.println("Directory where the file(s) are outputted: "
-			// + dir);
+//			System.err.println("Directory where the file(s) are outputted: " + dir);
 			FileOutputStream out = new FileOutputStream(dir + File.separator + changeExtension(file).replace(" ", "_"));
 
 			// Read out the questions
@@ -245,11 +244,11 @@ public class ScannerServiceImpl {
 
 				for (int a = 0; a < mixedAnswers.size(); a++) {
 					
-					int nr = a + 1;
-					answerText = nr + "";
+//					int nr = a + 1;
+//					answerText = nr + "";
 					
 					if(correctAnswersList.get(cAnswer).equals(mixedAnswers.get(a))) {
-						correctAnswerText = answerText;						
+						correctAnswerText = correctAnswersList.get(cAnswer);						
 					}					
 
 					// Create answer element, add an attribute, and add to

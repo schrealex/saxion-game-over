@@ -24,7 +24,6 @@ public class Scanner {
 	public static void main(String[] args) {
 		if (args.length > 0 && args[0] != null) {
 			loadProperties(new File(args[0]));
-
 			if (settings.containsKey("inputDir") && settings.containsKey("outputDir")) {
 				new ScannerServiceImpl(settings.get("inputDir"), settings.get("outputDir"), settings);
 			} else {
