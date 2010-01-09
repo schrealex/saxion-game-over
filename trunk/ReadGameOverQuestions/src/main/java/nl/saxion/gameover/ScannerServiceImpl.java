@@ -194,22 +194,25 @@ public class ScannerServiceImpl {
 				// Create question number element, add an attribute, and add to
 				// questions
 				Element questionNr = doc.createElement("question");
-				questionNr.setAttribute("number", qNumber++ + "");
+				questionNr.setAttribute("number", qNumber + "");
 				root.appendChild(questionNr);
 
 				// Create question type element, add an attribute, and add to
 				// question number
 				Element questionType = doc.createElement("questionType");
 				String qTypeString = "";
-
-				if (!mixedAnswers.contains("(4 afbeeldingen)")) {
-					questionType.setAttribute("typeNr", "1");
-					questionNr.appendChild(questionType);
-					qTypeString = "Text answers type";
-				} else {
-					questionType.setAttribute("typeNr", "2");
-					questionNr.appendChild(questionType);					
-					qTypeString = "Image answers type";
+				
+				for(String mx:mixedAnswers) {
+					if(!mx.matches("[0-9][0-9]?[0-9]?[a-d]")){
+						questionType.setAttribute("typeNr", "1");
+						questionNr.appendChild(questionType);
+						qTypeString = "Text answers type";
+					} else {
+						questionType.setAttribute("typeNr", "2");
+						questionNr.appendChild(questionType);					
+						qTypeString = "Image answers type";
+					}
+					
 				}
 
 				// Add a text element to the question type
@@ -220,10 +223,19 @@ public class ScannerServiceImpl {
 				// number
 				Element image = doc.createElement("image");
 				questionNr.appendChild(image);
-
-				// Add a text element to the question type
-				Text imageText = doc.createTextNode("image url");
-				image.appendChild(imageText);
+				
+				if(qTypeString.equals("Text answers type")) {
+					// Add a text element to the question type
+					Text imageText = doc.createTextNode(qNumber + ".jpg");
+					image.appendChild(imageText);
+				} else {
+					// Add a text element to the question type
+					Text imageText = doc.createTextNode("");
+					image.appendChild(imageText);
+				}
+				
+				// Raise the question number				
+				qNumber++;
 
 				// Create answers element, add an attribute, and add to question
 				// number
@@ -249,17 +261,17 @@ public class ScannerServiceImpl {
 					
 					if(correctAnswersList.get(cAnswer).equals(mixedAnswers.get(a))) {
 						correctAnswerText = correctAnswersList.get(cAnswer);						
-					}					
-
+					}			
+					
 					// Create answer element, add an attribute, and add to
 					// question number					
 					Element answer = doc.createElement("answer");
 					answer.setAttribute("number", answerText);
 					answers.appendChild(answer);
-
+					
 					// Add a text element to the question type
 					Text aText = doc.createTextNode(mixedAnswers.get(a));
-					answer.appendChild(aText);									
+					answer.appendChild(aText);	
 				}
 				cAnswer++;
 				
