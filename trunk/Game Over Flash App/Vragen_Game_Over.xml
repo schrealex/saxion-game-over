@@ -1320,11 +1320,11 @@
 <question>Wat is het vervoersmiddel van Alladin?</question>
 <answers>
 <answer number="1">Trein</answer>
-<answer number="2">Een vliegend tapijt</answer>
+<answer number="2">Vliegend tapijt</answer>
 <answer number="3">Schip</answer>
 <answer number="4">Auto</answer>
 </answers>
-<correctAnswer>Een vliegend tapijt</correctAnswer>
+<correctAnswer>Vliegend tapijt</correctAnswer>
 </question>
 <!-- Question number: 103 -->
 <question number="103">
@@ -1332,12 +1332,12 @@
 <image>103.jpg</image>
 <question>Bij wie woonde Belle voordat ze het Beest ontmoette?</question>
 <answers>
-<answer number="1">haar moeder</answer>
-<answer number="2">een vriendin</answer>
-<answer number="3">haar vader</answer>
-<answer number="4">haar vriend</answer>
+<answer number="1">Haar moeder</answer>
+<answer number="2">Een vriendin</answer>
+<answer number="3">Haar vader</answer>
+<answer number="4">Haar vriend</answer>
 </answers>
-<correctAnswer>haar vader</correctAnswer>
+<correctAnswer>Haar vader</correctAnswer>
 </question>
 <!-- Question number: 104 -->
 <question number="104">
@@ -1347,8 +1347,8 @@
 <answers>
 <answer number="1">101</answer>
 <answer number="2">111</answer>
-<answer number="3">100</answer>
-<answer number="4">110</answer>
+<answer number="3">2</answer>
+<answer number="4">10</answer>
 </answers>
 <correctAnswer>101</correctAnswer>
 </question>
@@ -1356,14 +1356,14 @@
 <question number="105">
 <questionType typeNr="1">Text answers type</questionType>
 <image>105.jpg</image>
-<question>Wanneer verloor Bambi haar moeder in de film? </question>
+<question>Wat gebeurde er met Bambi's moeder in de film?</question>
 <answers>
-<answer number="1">voordat de film begint</answer>
-<answer number="2">aan het einde</answer>
-<answer number="3">In het midden</answer>
-<answer number="4">In het begin</answer>
+<answer number="1">Ze rende weg</answer>
+<answer number="2">Ze is doodgeschoten door de jagers</answer>
+<answer number="3">Ze is van een klif gevallen</answer>
+<answer number="4">Ze heeft van een giftige plant gegeten</answer>
 </answers>
-<correctAnswer>In het begin</correctAnswer>
+<correctAnswer>Ze is doodgeschoten door de jagers</correctAnswer>
 </question>
 <!-- Question number: 106 -->
 <question number="106">
