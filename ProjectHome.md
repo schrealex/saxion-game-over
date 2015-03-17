@@ -1,0 +1,1 @@
+A graduation project to create an interactive board-game in combination with a flash application. Google code page created to enable students to work together on the project.
